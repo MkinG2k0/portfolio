@@ -1,6 +1,6 @@
 import { AxiosConfig } from './config'
 
-import { AUTH_STATUS, TokenService } from 'shared'
+import { AUTH_STATUS } from 'shared'
 
 import axios from 'axios'
 

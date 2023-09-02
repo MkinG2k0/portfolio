@@ -8,7 +8,7 @@ interface NavBtnProps extends ButtonProps {
 
 export const NavBtn: FC<PropsWithChildren<NavBtnProps>> = ({ children, href, ...props }) => {
 	return (
-		<Link href={href}>
+		<Link href={href as any}>
 			<Button {...props}>{children}</Button>
 		</Link>
 	)
