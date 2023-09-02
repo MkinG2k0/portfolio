@@ -47,7 +47,7 @@ const RightMenu = () => {
 }
 const Menu = () => {
 	return (
-		<NavigationMenu>
+		<NavigationMenu className={'max-sm:hidden'}>
 			<span className={'font-bold text-xl mr-6'}>MK</span>
 			<NavigationMenuList>
 				<NavigationMenuItem>
@@ -70,11 +70,11 @@ const Menu = () => {
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Contact</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href={NAV.MAIN} legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>More</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
+				{/*<NavigationMenuItem>*/}
+				{/*	<Link href={NAV.MAIN} legacyBehavior passHref>*/}
+				{/*		<NavigationMenuLink className={navigationMenuTriggerStyle()}>More</NavigationMenuLink>*/}
+				{/*	</Link>*/}
+				{/*</NavigationMenuItem>*/}
 			</NavigationMenuList>
 		</NavigationMenu>
 	)
