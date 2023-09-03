@@ -38,6 +38,7 @@ module.exports = {
 				},
 				foreground: 'var(--foreground)',
 				input: 'var(--input)',
+				'light-gray': 'var(--light-gray)',
 				muted: {
 					DEFAULT: 'var(--muted)',
 					foreground: 'var(--muted-foreground)',

@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export const About = () => {
 	return (
-		<div className={'col gap-5 items-center text-2xl '}>
-			<div className={'row gap-5 text-2xl flex-wrap w-full'}>
-				<div className={'col gap-6   max-w-2xl'}>
+		<div className={'col gap-6 items-center text-2xl '}>
+			<div className={'row gap-6 text-2xl flex-wrap w-full'}>
+				<div className={'col gap-6  max-w-2xl'}>
 					<span className={'flex gap-4 text-6xl font-max flex-wrap'}>
-						<span className={'text-[#808080]'}>I`m</span>
+						<span className={'text-muted'}>I`m</span>
 						<span>Mutalimov Kamal</span>
 					</span>
-					<p className={'text-[#808080] font-bold '}>
+					<p className={'text-muted font-bold '}>
 						A front-end engineer and UI/UX designer helping startups turn their visions into a digital reality. I
 						specialize in designing and building modern mobile and web-based apps.
 					</p>

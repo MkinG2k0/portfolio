@@ -2,24 +2,14 @@ import { CSSProperties } from 'react'
 
 import Image from 'next/image'
 
-export const Blur = () => {
+export const Blur = ({ className }: { className?: string }) => {
 	return (
-		<div className={'absolute w-[100vw] h-[100vh] overflow-x-hidden  pointer-events-none'}>
-			<img
-				className={'animation left-[-25vw] top-0 absolute scale-150'}
-				src={'/images/Ellipse3.svg '}
-				style={{ '--move-direction-x': '80%', '--move-duration': '45s' } as CSSProperties}
-			/>
-			<img
-				className={'animation left-[25vw] top-0 absolute scale-150'}
-				src={'/images/Ellipse4.svg '}
-				style={{ '--move-direction-x': '-50%', '--move-duration': '38s' } as CSSProperties}
-			/>
-			<img
-				className={'animation left-[50vw]  top-0 absolute  scale-150'}
-				src={'/images/Ellipse5.svg '}
-				style={{ '--move-direction-x': '30%', '--move-duration': '68s' } as CSSProperties}
-			/>
-		</div>
+		<svg className={`absolute w-full blur-[80px] ${className}`} viewBox={'0 0 2800 500'}>
+			<ellipse cx={'1000'} cy={'40'} fill={'rgba(63, 100, 233, 0.43)'} rx={'600'} ry={'170'} />
+			<ellipse cx={'1500'} cy={'100'} fill={'rgba(233, 63, 63, 0.43)'} rx={'600'} ry={'260'} />
+			<ellipse cx={'1900'} cy={'0'} fill={'rgba(255, 184, 0, 0.43)'} rx={'600'} ry={'138'} />
+		</svg>
 	)
 }
+
+// blur-2xl
