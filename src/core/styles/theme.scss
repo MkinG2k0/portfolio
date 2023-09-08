@@ -14,7 +14,7 @@
 		--background: #fdf7fd;
 		--foreground: var(--text);
 
-		--muted: var(--background);
+		--muted: var(--text);
 		--muted-foreground: var(--text);
 
 		--popover: var(--background);
@@ -26,13 +26,16 @@
 		--border: var(--text);
 		--input: var(--text);
 
-		--primary: #4eb848;
+		--accent-start: rgb(224, 224, 224);
+		--accent-end: rgb(185, 185, 185);
+
+		--primary: #c3e7f3;
 		--primary-foreground: var(--text);
 
 		--secondary: #baedeb;
 		--secondary-foreground: var(--text);
 
-		--accent: #33ae2d;
+		--accent: #c3e7f3;
 		--accent-foreground: var(--text);
 
 		--destructive: var(--background);
