@@ -27,7 +27,7 @@ export const About = () => {
 				</div>
 			</div>
 			<div className={'row gap-5 w-full'}>
-				<Button className={'text-2xl'} variant={'shadow'}>
+				<Button className={'text-2xl max-md:w-full'} variant={'shadow'}>
 					See my resume
 				</Button>
 			</div>

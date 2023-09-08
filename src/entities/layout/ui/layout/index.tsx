@@ -17,3 +17,54 @@ export const Layout: FC = ({ children }) => {
 		</div>
 	)
 }
+
+const arr = [
+	{
+		isBot: true,
+		message: 'вы придете ?',
+	},
+	{
+		isBot: true,
+		message: '1:да 2:нет',
+	},
+	{
+		isBot: false,
+		message: '2', // нет
+	},
+	{
+		isBot: false,
+		message: 'перенести запись ?',
+	},
+	{
+		isBot: true,
+		message: 'отменить или выбрать другой день',
+	},
+	{
+		isBot: false,
+		message: '2', // отменить , пернести
+	},
+	{
+		isBot: true,
+		message: 'показываем свободные дни',
+	},
+	{
+		isBot: true,
+		message: '1:08, 2:08, 3:08, 4:08, 5:08',
+	},
+	{
+		isBot: false,
+		message: '1:08',
+	},
+	{
+		isBot: true,
+		message: '12:00 , 13:00 , 14:00',
+	},
+	{
+		isBot: false,
+		message: '12:00',
+	},
+	{
+		isBot: true,
+		message: 'запись перенесена',
+	},
+]

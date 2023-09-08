@@ -15,12 +15,12 @@ export const Footer: FC<FooterProps> = ({}) => {
 				}
 			></div>
 
-			<div className={'row justify-between pb-14 text-xl pt-14'}>
-				<div className={'col '}>MK</div>
-				<div className={'row gap-24 flex-wrap'}>
+			<div className={'row justify-between gap-4 flex-wrap pb-14 text-xl px-4 pt-14'}>
+				<div className={'col'}>MK</div>
+				<div className={'row  gap-x-24 gap-y-4 flex-wrap'}>
 					<div className={'col'}>
 						<span className={'font-bold mb-5'}>Links</span>
-						<ul className={'text-light-gray col gap-2'}>
+						<ul className={'text-light-gray col gap-2 '}>
 							<li>
 								<Link className={'font-2xl'} href={NAV.MAIN}>
 									About
@@ -44,7 +44,7 @@ export const Footer: FC<FooterProps> = ({}) => {
 						</ul>
 					</div>
 					<div className={'col'}>
-						<span className={'font-bold'}>Elsewhere</span>
+						<span className={'font-bold mb-5'}>Elsewhere</span>
 						<ul className={'text-light-gray col gap-2'}>
 							<li>
 								<Link className={'font-2xl'} href={NAV.MAIN}>

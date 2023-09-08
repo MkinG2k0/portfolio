@@ -4,7 +4,7 @@ export const Info = () => {
 	return (
 		<div className={'col gap-8'}>
 			<span className={'text-5xl font-bold'}>Get to know me</span>
-			<div className={'row gap-8 flex-wrap'}>
+			<div className={'row gap-8 max-md:flex-col'}>
 				<Card description={'Who I am and what I do'} src={'/images/my.png'} titile={'About me'} />
 				<Card
 					// classNameImage={'shadow-image '}
@@ -14,7 +14,7 @@ export const Info = () => {
 					titile={'Tech Stack'}
 				/>
 			</div>
-			<div className={'row gap-8 flex-wrap'}>
+			<div className={'row gap-8 max-md:flex-col'}>
 				{/*<Card description={'description'} src={'/images/my.png'} titile={'titile'} />*/}
 				<Card description={'My thoughts, insights, and reflections'} src={'/images/Notebook.png'} titile={'Notebook'} />
 			</div>
@@ -34,13 +34,9 @@ const Card = ({
 	titile: string
 }) => {
 	return (
-		<div
-			className={
-				'col gap-4 items-center flex-auto min-w-[22rem] pt-10 bg-gray-200  rounded-3xl bg-primary overflow-hidden'
-			}
-		>
-			<span className={'text-4xl font-bold'}>{titile}</span>
-			<span className={'text-xl text-muted'}>{description}</span>
+		<div className={'col gap-4 px-2 items-center flex-auto pt-10 bg-gray-200  rounded-3xl bg-primary overflow-hidden'}>
+			<span className={'text-4xl font-bold text-center'}>{titile}</span>
+			<span className={'text-xl text-muted text-center'}>{description}</span>
 			<div className={'flex-auto relative col justify-end'}>
 				{isShadow && <div className={'shadow-image absolute w-full h-full'}></div>}
 				<Image alt={'mk'} className={'object-cover '} height={300} src={src} width={300} />
